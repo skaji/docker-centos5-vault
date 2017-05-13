@@ -1,5 +1,7 @@
 failed to install perl-5.26.0-RC1 into centos5
 
+full log: https://gist.github.com/skaji/842d5a4688ce39164bb9e375b5467b66
+
 ```
 Step 6/8 : RUN gcc --version
  ---> Running in 44e928c7299d
