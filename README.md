@@ -31,12 +31,12 @@ I assume you have docker. Then:
 
 # From when?
 
-From these commits ([perl.git](https://perl5.git.perl.org/perl.git/commitdiff/624c42e..1bee6ae), [github](https://github.com/Perl/perl5/compare/624c42e...1bee6ae)),
-we could not build perl on CentOS 5.
+From [these commits](https://perl5.git.perl.org/perl.git/commitdiff/624c42e..1bee6ae) (cf [github](https://github.com/Perl/perl5/compare/624c42e...1bee6ae)),
+we cannot build perl on CentOS 5.
 
 # Why?
 
-From these commits ([perl.git](https://perl5.git.perl.org/perl.git/commitdiff/624c42e..1bee6ae), [github](https://github.com/Perl/perl5/compare/624c42e...1bee6ae)),
+From [these commits](https://perl5.git.perl.org/perl.git/commitdiff/624c42e..1bee6ae) (cf [github](https://github.com/Perl/perl5/compare/624c42e...1bee6ae)),
 perl uses `Perl_fp_class_denorm` function to check whether numbers are subnormal or not.
 
 As [Dave Mitchell](http://www.nntp.perl.org/group/perl.perl5.porters/2017/05/msg244382.html)
