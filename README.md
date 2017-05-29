@@ -57,3 +57,21 @@ fpclassl() NOT found.
 ```
 
 See [full.log](full.log) for details.
+
+# How do we work on the perl source code with CentOS 5?
+
+I assume you have the perl source code in `/path/to/perl`.
+Then, try this:
+
+```
+# First, build plain CentOS 5 docker image
+[local]$ docker build --file Dockerfile.plain --tag centos5-perl .
+
+# "Login" to the docker image with mounting the perl source code
+[local]$ docker run -i -t --volume /path/to/perl:/perl centos5-perl bash -l
+
+# Do whatever you want...
+[docker]$ cd /perl
+[docker]$ ./Configure -de
+[docker]$ make
+```
